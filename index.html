@@ -84,9 +84,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Hexo是一个快速搭建的博客框架，支持Markdowm（或其他语言）编写文章。<br>安装：<br>    依赖环境：Node.js 和 Git<br>    在 Git Bash 输入命令 <code>npm install -g hexo-cli</code><br>建站<br>    在 Git Bash 中选择合适的路径，输入指令 <code>hexo init &lt;folder&gt;</code><br>配置部署<br>    在 github new repository 名字为 yourgithubname.github.io<br>    需要将 Git 和 github SSH连接<br>    修改 _config.yml，基本配置如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourgithubname/yourgithubname.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: &quot;your message&quot;</span><br></pre></td></tr></table></figure></p>
-<pre><code>在 Git Bash 输入 `hexo deploy`
-</code></pre><p>发布（文章）<br>    在 Git Bash 中 Hexo 文件夹下输入指令 <code>hexo new post &quot;articlename&quot;</code><br>    在 Hexo\source_posts 文件夹中修改 articlename.md<br>    在 Git Bash 中输入 <code>hexo d -g</code> 发布成功<br><blockquote><footer><strong>[Kwanwoo]</strong></footer></blockquote></p>
+        <p>Hexo是一个快速搭建的博客框架，支持Markdowm（或其他语言）编写文章。</p>
+<ol>
+<li>安装：<br>依赖环境：Node.js 和 Git<br>在 Git Bash 输入命令 <code>npm install -g hexo-cli</code></li>
+<li>建站<br>在 Git Bash 中选择合适的路径，输入指令 <code>hexo init &lt;folder&gt;</code></li>
+<li><p>配置部署<br>在 github new repository 名字为 yourgithubname.github.io<br>需要将 Git 和 github SSH连接<br>修改 _config.yml，基本配置如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourgithubname/yourgithubname.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: &quot;your message&quot;</span><br></pre></td></tr></table></figure>
+<p>在 Git Bash 输入 <code>hexo deploy</code></p>
+</li>
+<li>发布<br>默认您 init 的文件夹名为 Hexo<br>在 Git Bash 中 Hexo 路径下输入指令 <code>hexo new post &quot;articlename&quot;</code><br>在 Hexo\source_posts 文件夹中修改 articlename.md<br>在 Git Bash 中输入 <code>hexo d -g</code> 发布成功<blockquote><footer><strong>[Kwanwoo]</strong></footer></blockquote></li>
+</ol>
 
       
     </div>
